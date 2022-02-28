@@ -1,0 +1,97 @@
+body {
+  height: 100%;
+  width: 1240px;
+}
+.container_privacy_policy {
+  display: flex;
+  justify-content: space-between;
+}
+.privacy_policy_left {
+  width: 880px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.privacy_policy_right {
+  /* position:fixed; cố định menu */
+  width: 450px;
+}
+.privacy_policy_text {
+  padding: 10px 10px;
+  margin-left: 20px;
+}
+p {
+  font-size: 12.5px;
+  margin-left: 0.5cm;
+}
+a {
+  text-decoration: none;
+  color: #38d;
+}
+h3 {
+  margin-left: 0.7cm;
+}
+h5 {
+  margin-left: 0.7cm;
+}
+li {
+  font-size: 12.8px;
+}
+.click_hear {
+  text-decoration: none;
+  color: #38d;
+}
+.privacy_policy_title_list li {
+  font-size: 10px;
+  padding: 5px 10px 5px 12px;
+}
+.privacy_policy_title_list li a {
+  text-decoration: none;
+  color: #38d;
+  font-size: 12.8px;
+}
+.data_controllers_title li {
+  font-size: 12.8px;
+}
+.information_we_collect_list li {
+  font-size: 12.8px;
+  padding: 5px 10px 5px 12px;
+}
+.information_we_collect_text {
+  font-size: 12.8px;
+  margin-left: 25px;
+}
+.list_content {
+  margin-left: 0.7cm;
+  padding: 15px;
+}
+.list_content li {
+  padding: 5px;
+}
+.information_we_collect_account {
+  padding: 5px 5px;
+}
+.information_we_collect_Survey {
+  padding: 5px 0px;
+}
+.privacy_policy_right_top_text-title {
+  padding: 10px 0px;
+  width: 280px;
+  border-bottom: 1px solid rgb(202, 196, 196);
+}
+.privacy_policy_right_top_text-list ul li {
+  list-style: none;
+  padding: 5px 5px;
+}
+.privacy_policy_right_top_text-list ul li a {
+  color: rgb(161, 151, 138);
+}
+.privacy_policy_right_top_text-list ul li a:hover {
+  color: black;
+}
+.privacy_policy_right {
+  border-left: 1px solid rgb(230, 220, 220);
+  height: 600px;
+}
+.how_we_use_your_information-text li {
+  padding: 5px 5px;
+}

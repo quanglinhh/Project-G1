@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Word</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="header-main">
+                <div class="header-main__item">
+                    <a class="btn" id="header-logo" href="./index.html">
+                        <div class="header-logo__icon">
+                            <i class="fas fa-compact-disc "></i>
+                        </div>
+                        <h1  class="header-logo__text">MusicWorld</h1>
+                    </a>
+                    <div class="header-center">
+                        <ul>
+                            <li><a href="./Home.html" class="home">Home</a></li>
+                            <li><a href="./Events.html" class="events">Events</a></li>
+                            <li><a href="./Genres.html" class="genres">Genres</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-search">
+                        <input class="headerSearch" placeholder="Search for artists, bands, tracks, podcasts"
+                            type="search" name="q" autocomplete="off" aria-label="Search" aria-autocomplete="list"
+                            aria-owns="searchMenuList">
+                        <i class="fas fa-search icon-search"></i>
+                    </div>
+                    <div class="header-login">
+                        <button type="button" class="Sign-in signIn" tabindex="0" title="Sign in" aria-label="Sign in">Sign
+                            in</button>
+                        <button type="button" class="login signUp" tabindex="0" title="Create account"
+                            aria-label="Create account">Create account</button>
+                    </div>
+                    <div class="header-upload">
+                        <a href="" class="load notifyLogin"><span>Upload</span></a>
+                        <i class="fas fa-ellipsis-h load__icon  notifyUpdate"></i>
+                    </div>
+                    <!-- <div class="header-about"> 
+                        <ul>
+                            <li>
+                                <a href="">...</a>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="app">
+        <div class="body-sum">
+            <div class="container">
+                <nav class="booder">
+                    <div class="boder-left">
+                        <h1 class="boder-butom">
+                            Discover Tracks and Playlists
+                        </h1>
+                    </div>
+                    <div id="wapper">
+                        <!--chart1-->
+                        <div class="chart">
+                            <h2 class="text-chart chart1">Charts: Top 50</h2>
+                            <p class="p-text">The most played tracks on MusicWorld this week</p>
+                        </div>
+                        <div class="row filtering " >
+                            <div class="col-md-12 col-sm-12 col-xs-12" id="top50">
+
+                            </div>
+                             <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-z2gxcCZamslfRFWy-mSu93g-t200x200.jpg"
+                                                    alt="image">
+                                                    <!--ACTION-->
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Hip-hop & Rap
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/avatars-pZeOh0q48zbb5hNS-CtB30g-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Pop
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/avatars-aO2WfhRk8D65iARg-DFU6Kg-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">House
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                             <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000194364934-f0o5jk-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Electronic
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                             <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-EySpJMLl369HUtuC-dVXyzw-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Dance & EDM
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                              <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000027531879-4lx2gs-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Soundtrack
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000610374685-fgiwm3-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Jazz & Blues
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                             <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000480421149-4mf8o2-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Ambient
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                             <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000057001814-t7gkxq-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Dubstep
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000224726346-id9j8i-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download"><i class="fas fa-download download-icon notifyLogin"></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist"><i class="fas fa-plus addPlaylist-icon notifyLogin"></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Folk & Singer-Songwriter
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                             <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-TEhygkce7WiKswTK-I07CyQ-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                                                    <div class="more__group">
+                                                        <button class=" more--btn btn--download notifyLogin"><i class="fas fa-download download-icon "></i><p>Download</p></button>
+                                                        <button class=" more--btn btn--addPlaylist notifyLogin"><i class="fas fa-plus addPlaylist-icon "></i><p>Add to playlist</p></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Rock
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Top 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <!-- chart 2 -->
+                        <div class="chart">
+                            <h2 class="text-chart">Charts: New & hot</h2>
+                            <p class="p-text">Up-and-coming tracks on MusicWorld</p>
+                        </div>
+                        <div class="row filtering">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-ApQFCzhm86mCBqfp-6EnGTQ-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Hip-hop & Rap
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-BxeQbjzBdQeyOEn4-rKNMuw-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Pop
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-zfBi2c8tcpVLXACL-Jn9oRw-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">R&B & Soul
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-ERE5oHAndWmAtz45-VT6UPA-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Electronic
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-Pz4cUpT2sH6WKezA-m4yzPw-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Dance & EDM
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000027531879-4lx2gs-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Soundtrack
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000610374685-fgiwm3-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Jazz & Blues
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000480421149-4mf8o2-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Ambient
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000057001814-t7gkxq-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Dubstep
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000224726346-id9j8i-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Folk & Singer-Songwriter
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-TEhygkce7WiKswTK-I07CyQ-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Rock
+                                        </div>
+                                        <div>
+                                            <p class="text-min">New & Hot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- chart 3 -->
+                        <div class="chart">
+                            <h2 class="text-chart">Chill</h2>
+                            <p class="p-text">Popular playlists from the MusicWorld community</p>
+                        </div>
+                        <div class="row filtering">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000497390646-w8kzyn-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">jazzhip 7
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Chill</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000405464955-n4ge52-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Morning Chillout
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Mighty</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000260339726-a5lyg0-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">GLITCHED LOVE
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Blanc de Noir</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000122730195-exafo8-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Coffee Shop Music
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Josh Kunze</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000388088421-5xl072-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">| Chill | Lofi | Hip Hop |
+                                        </div>
+                                        <div>
+                                            <p class="text-min">helennpham</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000220590459-3jgpib-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Breeze
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Yeonkkot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000134890657-dqetcc-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Chillax Mood
+                                        </div>
+                                        <div>
+                                            <p class="text-min">J e z i k a ♡</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000645939403-fuy7za-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Chill Mix(High On Chill)
+                                        </div>
+                                        <div>
+                                            <p class="text-min">LukasM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000361848372-jfpz0p-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Never Chill Before
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Pineapple Express.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000249833302-gbgyfu-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Folk & Singer-Songwriter
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Electro Posé</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- chart 4 -->
+                        <div class="chart">
+                            <h2 class="text-chart">Workout</h2>
+                            <p class="p-text">Popular playlists from the MusicWorld community</p>
+                        </div>
+                        <div class="row filtering">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-ay1VOzVKgf2nYx0h-8yTy0A-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Best Of MrRevillz
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Ilyana Azman</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000519172176-m6bwen-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Workout Playlist
+                                        </div>
+                                        <div>
+                                            <p class="text-min">MugaTunes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000102277855-gl5njk-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Motivational Rap
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Khushpreet Singh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000359931777-whjnlr-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Best of Deep House
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Westcoast Radio (EDM)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000059300763-rf97ij-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">pre work out 2017
+                                        </div>
+                                        <div>
+                                            <p class="text-min">user154907890</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-U7lnkGOdbGROloEN-pyA1LA-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Best Of Chill Nation
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Ilyana Azman</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000472799472-3qy64t-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">T-4 Techno
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Westcoast Radio (EDM)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000548245758-luwm0j-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Best of Progressive
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Westcoast Radio (EDM)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000620938165-u1woyd-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Saxxy House (2022)
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Westcoast Radio (EDM)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000443585712-ariggx-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Best 90s Dance Hits
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Westcoast Radio (EDM)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- chart 5 -->
+                        <div class="chart">
+                            <h2 class="text-chart">Relax</h2>
+                            <p class="p-text">Popular playlists from the MusicWorld community</p>
+                        </div>
+                        <div class="row filtering">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000151142988-rhq3r7-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Ambient piano
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Agamidae</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000217936824-u8m4kg-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Relaxing Sunday
+                                        </div>
+                                        <div>
+                                            <p class="text-min">alexrainbirdMusic</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000134890657-dqetcc-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Chillax Mood
+                                        </div>
+                                        <div>
+                                            <p class="text-min">J e z i k a ♡</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000102883401-dj4tby-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">meditation
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Rehan Khan 55</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000172550414-3xxwmg-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Instrumental 7 - Flow
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Agamidae</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000220590459-3jgpib-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Breeze
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Yeonkkot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000363100305-ahk35r-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Sleep
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Kyler Smith1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000159635176-2ze4md-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Easy Sundays
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Indiemono</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000467273376-dv0wic-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">Morning Chillout
+                                        </div>
+                                        <div>
+                                            <p class="text-min">Mighty</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="wap-items-ss brbox">
+                                        <div class="wap-ss-img">
+                                            <div class="hover-img">
+                                                <img src="https://i1.sndcdn.com/artworks-000208627636-q5rfpn-t200x200.jpg"
+                                                    alt="image">
+                                                <div class="overlay">
+                                                    <div class="pageList-item__action">
+                                                        <div class="pageList-item__option">
+                                                            <i class="fas fa-heart pageList-item__like"></i>
+                                                            <i class="fas fa-ellipsis-h pageList-item__more"></i>
+                                                        </div>
+                                                        <div class="pageList-item__play">
+                                                            <i class="fas fa-play-circle pageList-item__play--icon"></i>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pageList-item__pause">  
+                                                            <i class="fas fa-pause-circle pageList-item__pause--icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textleft">
+                                        <div style="margin-top:10px;">lofi 4 studying
+                                        </div>
+                                        <div>
+                                            <p class="text-min">suri</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+           
+        </div>
+        <div class="inter">
+            <div class="inter-text">
+                <p class="text-danger"> Go mobile !</p>
+            </div>
+            <div class="or-login">
+                <a href="" class=" notifyUpdate"><img src="assets/img/logo_ver5_06.png" width=90% alt=""></a>
+                <a href="" class=" notifyUpdate"><img src="assets/img/logo_ver5_07.png" width=90% alt=""></a>
+            </div>
+            <div class="foot">
+                <div class="foot-wrapper">
+                    <a href="" class=" notifyUpdate">Legal -</a>
+                    <a href="" class=" notifyUpdate">Privacy -</a>
+                    <a href="" class=" notifyUpdate">Cookie Policy -</a>
+                    <a href="" class=" notifyUpdate">Cookie Manager -</a>
+                    <a href="" class=" notifyUpdate">Imprint -</a>
+                    <a href="" class=" notifyUpdate">Creator Resources -</a>
+                    <a href="" class=" notifyUpdate">Blog -</a>
+                    <a href="" class=" notifyUpdate">Charts </a>
+                </div>
+                <div class="foot-lange">
+                    <a href="" class=" notifyUpdate">Language :</a>
+                    <p>English (US)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Đĩa phát nhạc-->
+    <div class="playControls">
+        <div class="playControls__item">
+            <div class="btn-prev">
+                <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="btn-toggle-play">
+                <i class="fas fa-play playBtn"></i>
+                <i class="fas fa-pause pauseBtn"></i>
+            </div>
+            <div class="btn-next">
+                <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="btn-random">
+                <i class="fas fa-random"></i>
+            </div>
+            <div class="btn-repeat">
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="playbackTimeline">
+                <div class="playbackTimeline__timePassed">
+                    <span class="timePlay">
+                        0:00
+                    </span>
+                </div>
+                <div class="range">
+                    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                    <div class="ranger-progress"></div>
+                </div>
+                <div class="playbackTimeline__duration">
+                    4:18
+                </div>
+            </div>
+            <div class="volume ">
+                <div class="volume--icon ">
+                    <i class="fas fa-volume-up volume-up"></i>
+                     <i class="fas fa-volume-down  volume-down"></i>
+                    <i class="fas fa-volume-mute  volume-mute"></i> 
+                </div>   
+                <div class="volume--background--range">
+                    <div class="volume--background">
+                        <input class="volume--range"type="range" value="10" step="1" min="0" max="10">
+                        <div class="volume-progress"></div>
+                    </div>
+                </div>        
+            </div>
+            
+            <div class="playbackSoundBadge">
+                <a href="#" class="">
+                    <div class="image__lightOutline ">
+                        <img src="https://i1.sndcdn.com/artworks-z2gxcCZamslfRFWy-mSu93g-t120x120.jpg" class="image__lightOutline--child">
+                    </div>
+                </a>
+                <div class="playbackSoundBadge__titleContextContainer">
+                    <a href="./singer.html" id="linkSinger" class="playbackSoundBadge__lightLink singer">Denvau</a>
+
+                    <div class="playbackSoundBadge__title">
+                        <a class="playbackSoundBadge__titleLink" href="">
+                            <span class="playbackSoundBadge__titleText song">Đen - Mang Tiền Về Cho Mẹ ft. Nguyên Thảo</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-like notifyLogin">
+                    <i class="fas fa-heart"></i>
+                </div >
+                <div class="menu">
+                    <div class="btn-menu">
+                    <i class="fas fa-bars menuBtn"></i>
+                    </div>
+                    <div class="menuSong">
+                        <div class="menu-header">
+                            <span class="menu-header__text"><p>Next up</p></span>
+                            <div class="menu-header__out">
+                                <i class="fas fa-times menu-out-icon"></i>
+                            </div>
+                        </div> 
+                        <div class="menuMain">
+                            <div class="menu-main">
+                            
+                            </div>
+                        </div> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio id="audio" src=""></audio>
+       
+    </div>
+    <!--FORM ĐĂNG NHẬP(ĐĂNG KÝ)-->
+    <div class="btn-account">
+        <div class="modal">
+            <div class="modal__overlay"></div>
+                <div class="modal__body"> 
+                
+            <!--Register form-->
+                    <form action="">
+                        <div class="auth-form" id="signUp-form" >
+                            <div class="auth-form__container"> 
+                                <div class="auth-form__form">
+                                    <div class="auth-form__label">
+                                        <h2 class="auth-form__label-title">Đăng Ký</h2>
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <input id="accountSignUp" type="text" class="auth-form__input" name="acc" placeholder="Nhập tài khoản đăng ký">
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <i class="fas fa-eye-slash show_hide"></i>
+                                        <input id="password" type="password" class="auth-form__input" name="password" placeholder="Nhập mật khẩu của bạn"
+                                                oninvalid="this.setCustomValidity('Vui lòng nhập Password của bạn')"
+                                                oninput="setCustomValidity('')">
+                                    </div>
+                                    <div class="indicator">
+                                        <div class="icon-text">
+                                            <i class="fas fa-exclamation-circle error_icon"></i>
+                                            <h6 class="text"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <i class="fas fa-eye-slash show_hide"></i>
+                                        <input id="re-password" type="password" class="auth-form__input" name="re-password" placeholder="Nhập lại mật khẩu">
+                                    </div>
+                                    <div class="auth-form__aside">
+                                        <p class="auth-form__policy-text">
+                                            When registering, you agree that we may use your provided data for the registration
+                                                and to send you notifications on our products and services. You can unsubscribe from 
+                                                notifications at any time in your settings. For additional info 
+                                                please refer to our <a href="./privacy_policy.html" class="auth-form__policy-link">Privacy Policy.</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="auth-form__controls">
+                                            <button  type="reset" class="btn auth-form__controls-back">Return</button>
+                                            <button type="submit" id="register-btn" class="btn btn--primary" onClick="store()">Register</button>
+                                        </div>
+                                            <div class="auth-form__socials">
+                                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                                <i class="fab fa-facebook auth-form__socials-icon"></i>
+                                                <span class="auth-form__socials-lable-title notifyUpdate">  Continue with Facebook </span>
+                                            </a>
+                                            <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                                <i class="fab fa-google auth-form__socials-icon"></i>
+                                                <span class="auth-form__socials-lable-title notifyUpdate"> Continue with Google</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div> 
+                    </form>
+            
+            <!--LoginForm-->
+                     
+                <form action="">
+                    <div class="auth-form" id="login-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__form">
+                                <div class="auth-form__label">
+                                    <h2 class="auth-form__label-title">Đăng Nhập</h2>
+                                </div>
+                                <div class="auth-form__group">
+                                    <input id="accLog" type="text" class="auth-form__input" required placeholder="Enter your account"
+                                        oninvalid="this.setCustomValidity('Vui lòng nhập tài khoản của bạn')"
+                                        oninput="setCustomValidity('')">
+                                </div>
+                                <div class="auth-form__group">
+                                    <i class="fas fa-eye-slash show_hide"></i>
+                                    <input id="passwordLog" type="password" class="auth-form__input" required placeholder="Enter your password"
+                                        oninvalid="this.setCustomValidity('Vui lòng nhập Password của bạn')"
+                                        oninput="setCustomValidity('')">
+                                </div>
+                                <div class="auth-form__aside">
+                                    <div class="auth-form__help">
+                                        <a href="#" class=" auth-form__help--forgot notifyUpdate">Forgot password?</a>
+                                        <span class="auth-form__help-separate"></span>
+                                        <a href="#" class="auth-form__help-link notifyUpdate">You need help?</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="auth-form__controls">
+                                            <button type="reset" class="btn auth-form__controls-back">Return</button>
+                                            <button type="submit" id="btn-login" class="btn btn--primary" onClick="check()">Login</button>
+                                    </div>
+                                    <div class="auth-form__socials">
+                                        <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                            <i class="fab fa-facebook auth-form__socials-icon"></i>
+                                            <span class="auth-form__socials-lable-title notifyUpdate">  Continue with Facebook </span>
+                                        </a>
+                                        <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                            <i class="fab fa-google auth-form__socials-icon"></i>
+                                            <span class="auth-form__socials-lable-title notifyUpdate"> Continue with Google</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                   
+            </div>
+        </div>    
+    </div>
+</body>
+<script src="./assets/js/validForm.js"></script>
+<script type="module" src="assets/js/account.js"></script>
+<script type="module" src="assets/js/home.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+    integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+    $('.filtering').slick({
+        slidesToShow: 4.2,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 8000,
+    });
+
+    $('.filtering').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+</script>
+
+</html>

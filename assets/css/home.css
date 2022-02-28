@@ -1,0 +1,251 @@
+/*Header*/
+.home {
+  background-color: #111;
+}
+/* Tiêu đề  */
+.body-sum {
+  position: absolute;
+  display: flex;
+  margin-top: 50px;
+}
+.boder-butom {
+  width: 900px;
+  border-top: 0;
+  border-bottom: 1px solid #f2f2f2;
+  height: 65px;
+  font-size: 30px;
+}
+.text-chart {
+  padding: 20px 0px;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.chart {
+  margin-bottom: 0.8cm;
+  border-bottom: 0;
+}
+.p-text {
+  margin-top: -0.3cm;
+  color: #999;
+  font-size: 1.4rem;
+}
+#wapper {
+  padding: 0px 0px;
+}
+
+.row {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+/* nav-left */
+
+.inter {
+  width: 360px;
+  height: 1650px;
+  background-color: rgb(255 255 255);
+  padding: 20px 40px;
+  border-left: 1px solid #f2f2f2;
+  position: fixed;
+  margin-left: 880px;
+}
+.text-danger {
+  margin-top: 1cm;
+  border-bottom: 1px solid #f2f2f2;
+  color: #9b9b9b;
+  font-size: 1.4rem;
+  padding-bottom: 5px;
+  margin-top: 60px;
+}
+.or-login {
+  display: flex;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+.foot-wrapper {
+  margin-top: 20px;
+  color: #9b9b9b;
+}
+.foot-wrapper a {
+  text-decoration: none;
+  color: #9b9b9b;
+  font-size: 1.2rem;
+}
+.foot-wrapper a:hover {
+  color: rgb(123, 204, 204);
+}
+.foot-lange {
+  display: flex;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.foot-lange a {
+  text-decoration: none;
+  color: #38d;
+}
+.foot-lange a:hover {
+  color: rgb(116, 177, 177);
+}
+
+/*    Tạo Slide chart     */
+.wap-ss-img {
+  width: 100%;
+}
+.wap-ss-img img {
+  height: 173px;
+  margin: 0 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: fontawesome;
+  font-size: 30px;
+  color: rgb(206, 147, 19);
+}
+.text-min {
+  font-size: 13px;
+  color: #999;
+}
+.slick-prev:before,
+.slick-next:before:hover {
+  color: #f50;
+}
+img {
+  border-radius: 10px;
+}
+.container {
+  width: 880px;
+  padding: 20px 30px 20px 30px;
+  background-color: #fff;
+  position: absolute;
+}
+.overlay {
+  position: absolute;
+  transform: translate (-50%, -50%);
+}
+.hover-img {
+  position: absolute;
+  transform: translate (-50%, -50%);
+}
+.textleft {
+  float: left;
+  margin-top: 4.5cm;
+  font-size: 1.4rem;
+}
+.overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: 0.5s ease;
+}
+.wap-ss-img:hover .overlay {
+  opacity: 1;
+}
+
+/*  play list phát nhạc */
+.pageList-item__option {
+  position: absolute;
+  font-size: 15px;
+  color: var(--white-color);
+  display: inline;
+  bottom: 2%;
+  right: 10%;
+}
+.pageList-item__like {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.pageList-item__more {
+  cursor: pointer;
+}
+.pageList-item__action {
+  top: 20%;
+  left: 20%;
+}
+.pageList-item__play {
+  position: absolute;
+  font-size: 100px;
+  top: 20%;
+  left: 20%;
+  display: flex;
+}
+.pageList-item__play:hover {
+  cursor: pointer;
+}
+.pageList-item__play--icon {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border-radius: 50px;
+}
+.pageList-item__pause--icon {
+  color: var(--primary-color);
+  position: absolute;
+  left: 0px;
+  background-color: var(--white-color);
+  border-radius: 50px;
+}
+.pageList-item__pause {
+  font-size: 100px;
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 35px;
+  display: none;
+}
+.action .pageList-item__pause {
+  display: block;
+}
+.more {
+  width: 145px;
+  position: absolute;
+  clear: both;
+  right: 100%;
+  height: 100%;
+  top: 95%;
+  right: 50%;
+  border-radius: 5px;
+  display: none;
+}
+.more__group {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+.more--btn {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.more--btn:hover {
+  background-color: #ccc;
+}
+.btn--download {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.btn--addPlaylist {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.download-icon {
+  margin-left: -10px;
+}
+.menu-playlist.action {
+  background-image: linear-gradient(0, #ff3500, #ff7500);
+  color: var(--white-color);
+}
+.menu-playlist {
+  cursor: pointer;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicWorld</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/Event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="header-main">
+                <div class="header-main__item">
+                    <a class="btn" id="header-logo" href="./index.html">
+                        <div class="header-logo__icon">
+                            <i class="fas fa-compact-disc "></i>
+                        </div>
+                        <h1  class="header-logo__text">MusicWorld</h1>
+                    </a>
+                    <div class="header-center">
+                        <ul>
+                            <li><a href="./Home.html" class="home">Home</a></li>
+                            <li><a href="./Events.html" class="events">Events</a></li>
+                            <li><a href="./Genres.html" class="genres">Genres</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-search">
+                        <input class="headerSearch" placeholder="Search for artists, bands, tracks, podcasts"
+                            type="search" name="q" autocomplete="off" aria-label="Search" aria-autocomplete="list"
+                            aria-owns="searchMenuList">
+                        <i class="fas fa-search icon-search"></i>
+                    </div>
+                    <div class="header-login">
+                        <button type="button" class="Sign-in signIn" tabindex="0" title="Sign in" aria-label="Sign in">Sign
+                            in</button>
+                        <button type="button" class="login signUp" tabindex="0" title="Create account"
+                            aria-label="Create account">Create account</button>
+                    </div>
+                    <div class="header-upload">
+                        <a href="" class="load notifyLogin"><span>Upload</span></a>
+                        <i class="fas fa-ellipsis-h load__icon  notifyUpdate"></i>
+                    </div>
+                    <!-- <div class="header-about"> 
+                        <ul>
+                            <li>
+                                <a href="">...</a>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--APP-->
+    <div class="app">
+        <div class="main-container" id="appRoute">
+            <div class="banner bg-event">
+                <div class="banner-cover"> </div>
+                <div class="banner-cover__after"></div>
+            </div>
+            <div class="row">
+                <div class="row-center" >
+                    <div class="row-center_background" style="background-image: url('./assets/img/newYear.jpg');">
+                        <div class="row-center__content">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-content__text">
+                                <a href=""><h6>New Year Party</h6></a>
+                            </div>
+                            <span class="countdown mb-3"></span>
+                            <a href="#" class="btn btn-ticket notifyLogin">Buy Ticket</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="row-eventList">
+                    <div class="row-event">
+                        <div class="row-event__background" style="background-image: url('./assets/img/DJMarshmello.jpg');">
+                            <div class="row-event__content"></div>
+                            <div class="content">
+                                <a href="" class="notifyUpdate"><h6>Dance with DJ Marshmello</h6></a>
+                            </div>
+                            <div class="event__location">
+                                <span>Price: k100 Location: Las Vegas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-event">
+                        <div class="row-event__background" style="background-image: url('./assets/img/1.jpg');">
+                            <div class="row-event__content"></div>
+                            <div class="content">
+                                <a href="" class="notifyUpdate"><h6>Lusaka dance with DJ Nowan</h6></a>
+                            </div>
+                            <div class="event__location">
+                                <span>Price: K50 Location: Lusaka</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="bg-img">
+        <div class="footer-cover"></div>
+        <div class="footer-cover__before"></div>
+    </footer>
+      <!--FORM ĐĂNG NHẬP(ĐĂNG KÝ)-->
+    <div class="btn-account">
+        <div class="modal">
+            <div class="modal__overlay"></div>
+                <div class="modal__body"> 
+                
+            <!--Register form-->
+                    <form action="">
+                        <div class="auth-form" id="signUp-form" >
+                            <div class="auth-form__container"> 
+                                <div class="auth-form__form">
+                                    <div class="auth-form__label">
+                                        <h2 class="auth-form__label-title">Đăng Ký</h2>
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <input id="accountSignUp" type="text" class="auth-form__input" name="acc" placeholder="Nhập tài khoản đăng ký">
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <i class="fas fa-eye-slash show_hide"></i>
+                                        <input id="password" type="password" class="auth-form__input" name="password" placeholder="Nhập mật khẩu của bạn"
+                                                oninvalid="this.setCustomValidity('Vui lòng nhập Password của bạn')"
+                                                oninput="setCustomValidity('')">
+                                    </div>
+                                    <div class="indicator">
+                                        <div class="icon-text">
+                                            <i class="fas fa-exclamation-circle error_icon"></i>
+                                            <h6 class="text"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <i class="fas fa-eye-slash show_hide"></i>
+                                        <input id="re-password" type="password" class="auth-form__input" name="re-password" placeholder="Nhập lại mật khẩu">
+                                    </div>
+                                    <div class="auth-form__aside">
+                                        <p class="auth-form__policy-text">
+                                            When registering, you agree that we may use your provided data for the registration
+                                                and to send you notifications on our products and services. You can unsubscribe from 
+                                                notifications at any time in your settings. For additional info 
+                                                please refer to our <a href="./privacy_policy.html" class="auth-form__policy-link">Privacy Policy.</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="auth-form__controls">
+                                            <button  type="reset" class="btn auth-form__controls-back">Return</button>
+                                            <button type="submit" id="register-btn" class="btn btn--primary" onClick="store()">Register</button>
+                                        </div>
+                                            <div class="auth-form__socials">
+                                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                                <i class="fab fa-facebook auth-form__socials-icon"></i>
+                                                <span class="auth-form__socials-lable-title notifyUpdate">  Continue with Facebook </span>
+                                            </a>
+                                            <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                                <i class="fab fa-google auth-form__socials-icon"></i>
+                                                <span class="auth-form__socials-lable-title notifyUpdate"> Continue with Google</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div> 
+                    </form>
+            
+            <!--LoginForm-->
+                     
+                <form action="">
+                    <div class="auth-form" id="login-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__form">
+                                <div class="auth-form__label">
+                                    <h2 class="auth-form__label-title">Đăng Nhập</h2>
+                                </div>
+                                <div class="auth-form__group">
+                                    <input id="accLog" type="text" class="auth-form__input" required placeholder="Enter your account"
+                                        oninvalid="this.setCustomValidity('Vui lòng nhập tài khoản của bạn')"
+                                        oninput="setCustomValidity('')">
+                                </div>
+                                <div class="auth-form__group">
+                                    <i class="fas fa-eye-slash show_hide"></i>
+                                    <input id="passwordLog" type="password" class="auth-form__input" required placeholder="Enter your password"
+                                        oninvalid="this.setCustomValidity('Vui lòng nhập Password của bạn')"
+                                        oninput="setCustomValidity('')">
+                                </div>
+                                <div class="auth-form__aside">
+                                    <div class="auth-form__help">
+                                        <a href="#" class=" auth-form__help--forgot notifyUpdate">Forgot password?</a>
+                                        <span class="auth-form__help-separate"></span>
+                                        <a href="#" class="auth-form__help-link notifyUpdate">You need help?</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="auth-form__controls">
+                                            <button type="reset" class="btn auth-form__controls-back">Return</button>
+                                            <button type="submit" id="btn-login" class="btn btn--primary" onClick="check()">Login</button>
+                                    </div>
+                                    <div class="auth-form__socials">
+                                        <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                            <i class="fab fa-facebook auth-form__socials-icon"></i>
+                                            <span class="auth-form__socials-lable-title notifyUpdate">  Continue with Facebook </span>
+                                        </a>
+                                        <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                            <i class="fab fa-google auth-form__socials-icon"></i>
+                                            <span class="auth-form__socials-lable-title notifyUpdate"> Continue with Google</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                   
+            </div>
+        </div>    
+    </div>
+</body>
+<script src="./assets/js/account.js"></script>
+<script src="./assets/js/events.js"></script>
+</html>

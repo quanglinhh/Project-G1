@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicWorld</title>
+    <link rel="stylesheet" href="assets/css/songs.css">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="header-main">
+                <div class="header-main__item">
+                    <a class="btn" id="header-logo" href="./index.html">
+                        <div class="header-logo__icon">
+                            <i class="fas fa-compact-disc "></i>
+                        </div>
+                        <h1  class="header-logo__text">MusicWorld</h1>
+                    </a>
+                    <div class="header-center">
+                        <ul>
+                            <li><a href="./Home.html" class="home">Home</a></li>
+                            <li><a href="./Events.html" class="events">Events</a></li>
+                            <li><a href="./Genres.html" class="genres">Genres</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-search">
+                        <input class="headerSearch" placeholder="Search for artists, bands, tracks, podcasts"
+                            type="search" name="q" autocomplete="off" aria-label="Search" aria-autocomplete="list"
+                            aria-owns="searchMenuList">
+                        <i class="fas fa-search icon-search"></i>
+                    </div>
+                    <div class="header-login">
+                        <button type="button" class="Sign-in signIn" tabindex="0" title="Sign in" aria-label="Sign in">Sign
+                            in</button>
+                        <button type="button" class="login signUp" tabindex="0" title="Create account"
+                            aria-label="Create account">Create account</button>
+                    </div>
+                    <div class="header-upload">
+                        <a href="" class="load notifyLogin"><span>Upload</span></a>
+                        <i class="fas fa-ellipsis-h load__icon  notifyUpdate"></i>
+                    </div>
+                    <!-- <div class="header-about"> 
+                        <ul>
+                            <li>
+                                <a href="">...</a>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="app">
+        <div class="body__nav">
+            <div class="song__detail">
+                <div class="nav__player">
+                    <div class="song__icon">
+                        <div class="nav__play">
+                            <i class="fas fa-play-circle nav__play--icon"></i>
+                        </div>
+                        <div class="nav__pause">  
+                            <i class="fas fa-pause-circle nav__pause--icon"></i>
+                        </div>
+                    </div>    
+                <div class="nav__singer_song">
+                    <span class="nav__singer_song-text songName">
+                        </span><br>
+                    <a href="" class="nav__singer_song-singer ">
+                        <span class="singerName"></span>
+                    </a>
+                </div>
+            </div>
+            </div>
+           
+            
+            <div class="image__song">
+                <img src="" alt="" class="image__song__image" width="340"></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container__form_left">
+                <div class="container__comment">
+                    <div class="avatar"></div>
+                    <div class="container__with-search">
+                        <input type="text" class="container_search" placeholder="Write a comment">
+                    </div>
+                </div>
+                <div class="container__interactive">
+                    <div class="container__interactive-left">
+                        <div class="container__like">
+                             <a href="" class="like">
+                                <i class="fas fa-heart icon"></i>
+                                 <span>
+                                     Like
+                                 </span>
+                             </a>
+                        </div>
+                        <div class="container__repost">
+                             <a href="" class="repost">
+                                <i class="fas fa-redo icon"></i>
+                                <span>
+                                    Repost
+                                </span>
+                             </a>
+                        </div>
+                        <div class="comtainer__share">
+                             <a href="" class="share">
+                                <i class="fas fa-share-square icon" ></i>
+                                <span>
+                                    Share
+                                </span>
+                             </a>
+                        </div>
+                        <div class="container__copylink">
+                               <a href="" class="copylink">
+                                <i class="fas fa-link icon"></i>
+                                <span>
+                                    Copylink
+                                </span>
+                               </a>
+                        </div>
+                        <div class="container__more">
+                            <a href="" class="more">
+                                <i class="fas fa-ellipsis-h icon"></i>
+                                <span>
+                                    More
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container_form_right">
+                        <div class="container_form_right-view">
+                            <i class="fas fa-play"></i>
+                             <span>8.59M</span>
+                        </div>
+                        <div class="container_form_right-like">
+                            <i class="fas fa-heart"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="container_form_right-repost">
+                            <i class="fas fa-redo"></i>
+                            <span>Repost</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__comment-details">
+                    <!-- thông tin bên trái -->
+                    <div class="container__comment-details-singer">
+                        <a href="">
+                            <img src="" alt="image singer" class="container__comment-details-image" width="100"><br>
+                            <span class="container__comment-details-singer-singer singerName"></span>
+                        </a><br>
+                        <div class="container__comment-details-singer-chart">
+                            <i class="far fa-user"></i>
+                            <span class="container__comment-statistical">
+                                2356
+                            </span>
+                        </div>
+                        <button class="container__conment-follow">
+                            <i class="fas fa-user-plus"></i>
+                            Follow
+                        </button>
+                    </div>
+                    <!-- thông tin bên phải -->
+                    <div class="container__comment-list">
+                        <div class="container__comment-listen-to-list">
+                            <div class="container__comment-listen-to-list-singer">
+                                <p class="container__comment-listen-to-list-singer-follow">Follow</p>
+                                <a href="">
+                                    <p class="container__comment-listen-to-list-singer-ib singerName">Ngô Khánh Linh</p>
+                                </a>
+                                <p class="container__text">and others on MusicWorld</p>
+                            </div>
+                            <div class="container__comment-listen-to-list-login">
+                                <button class="btn-sign-in">Sign in</button>
+                                <button class="btn-Create-a-SoundCloud-account">Create a SoundCloud account</button>
+                            </div>
+                        </div>
+                        <div class="truncatedAudioInfo__content">
+                            <div class="truncatedAudioInfo__content-link">
+                                <p>Link yt : </p>
+                                <a href="" class="truncatedAudioInfo__content-link1">www.youtube.com/watch?v=ZqDBgYPpU…l=M.A.DProduction</a>
+                            </div>
+                            <div class="truncatedAudioInfo__content_cmt">
+                                <i class="fa-light fa-comment"></i>
+                                <span class="truncatedAudioInfo__content_cmt-cmt">955 comment</span>
+                            </div>
+                            <div class="truncatedAudioInfo__content_notify-list">
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/artworks-KMOaCpc1ikS3cG0H-M3kEhA-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Trần Thanh Hà at 1:58</span><br>
+                                                <span class="header__notify-description">sao hay thế :))</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">13 hours ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/artworks-KMOaCpc1ikS3cG0H-M3kEhA-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Trần Thanh Hà at 0:58</span><br>
+                                                <span class="header__notify-description">nghe một lần đã thấy hay rồi</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">13 hours ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-oIUiM248AHRbbXzn-5G3GjA-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Trần Thanh  at 2:58</span><br>
+                                                <span class="header__notify-description">tim tim</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">15 hours ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-waArgDMOTbnMV87h-lBA4mg-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Khánh Vi  at 0:58</span><br>
+                                                <span class="header__notify-description">meo</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">1 days ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-6DniNxIcN5f5ts0k-WtyPYg-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Phúc Vy  at 2:58</span><br>
+                                                <span class="header__notify-description">Yêu Vi nhất</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">1 days ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-VMz59gCpIw5I0iXt-9sJsXA-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Jame  at 3:22</span><br>
+                                                <span class="header__notify-description">LIKE</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">2 days ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-000718427893-iihi8a-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Davit  at 1:38</span><br>
+                                                <span class="header__notify-description">How to dowload</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">3 days ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-5m8epOczPtHJIfOI-Huy27A-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Co be xa nga  at 5:58</span><br>
+                                                <span class="header__notify-description">Nghe bùn thế nhỉ</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">4 days ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-Z1JZbjIYqxQw9b31-sjWdzA-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Hằng em  at 4:58</span><br>
+                                                <span class="header__notify-description">Good job </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">4 days ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-LdndCJnRFlzZukd3-tVyOTw-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Idol top top at 0:33</span><br>
+                                                <span class="header__notify-description">Nhạc của orito khác biệt thật</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">5 days ago</p>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://i1.sndcdn.com/avatars-000692164937-04deyy-t50x50.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Thơm Nguyễn  at 3:02</span><br>
+                                                <span class="header__notify-description">Nghe xong lại nhớ người yêu cũ</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <p class="header__notify-list_time">5 days ago</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__form-right">
+                <div class="container__form-right_top">
+                    <a href="" class="container__form-right_top_left">
+                        <i class="fas fa-music"></i>
+                        <span class="container__form-right_top_left_text">Related tracks</span>
+                    </a>
+                    <a href="" class="container__form-right_top_right">
+                        View all
+                    </a>
+                </div>
+                <div class="container__form-right_center">
+                    <div class="container__form-right_wrapper">
+                        <div class="container__form-right_wrapper_img">
+                            <img src="https://i1.sndcdn.com/artworks-6uF3GXFXsryww31u-9idUIA-t50x50.jpg" alt="" class="container__form-right_wrapper_image">
+                            <div class="container__form-right_wrapper_infomation">
+                                <a href="" class="container__form-right_wrapper_infomation-singer">DAO Entertainment</a><br>
+                                <a href="" class="container__form-right_wrapper_infomation-song">Em Thích - Sean X Lửa"</a>
+                            </div>
+                        </div>
+                        <div class="container__form-right_wrapper_infomationn">
+                            <div class="container__form-right_wrapper_infomation_like">
+                                <i class="fas fa-play icon-play">5584</i>
+                                <i class="fas fa-heart"></i>557</i>
+                                <i class="fas fa-redo">8897</i>
+                                <i class="fas fa-comment"></i>2345</i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ <!--FORM ĐĂNG NHẬP(ĐĂNG KÝ)-->
+ <div class="btn-account">
+    <div class="modal">
+        <div class="modal__overlay"></div>
+            <div class="modal__body"> 
+            
+        <!--Register form-->
+                <form action="">
+                    <div class="auth-form" id="signUp-form" >
+                        <div class="auth-form__container"> 
+                            <div class="auth-form__form">
+                                <div class="auth-form__label">
+                                    <h2 class="auth-form__label-title">Đăng Ký</h2>
+                                </div>
+                                <div class="auth-form__group">
+                                    <input id="accountSignUp" type="text" class="auth-form__input" name="acc" placeholder="Nhập tài khoản đăng ký">
+                                </div>
+                                <div class="auth-form__group">
+                                    <i class="fas fa-eye-slash show_hide"></i>
+                                    <input id="password" type="password" class="auth-form__input" name="password" placeholder="Nhập mật khẩu của bạn"
+                                            oninvalid="this.setCustomValidity('Vui lòng nhập Password của bạn')"
+                                            oninput="setCustomValidity('')">
+                                </div>
+                                <div class="indicator">
+                                    <div class="icon-text">
+                                        <i class="fas fa-exclamation-circle error_icon"></i>
+                                        <h6 class="text"></h6>
+                                    </div>
+                                </div>
+                                <div class="auth-form__group">
+                                    <i class="fas fa-eye-slash show_hide"></i>
+                                    <input id="re-password" type="password" class="auth-form__input" name="re-password" placeholder="Nhập lại mật khẩu">
+                                </div>
+                                <div class="auth-form__aside">
+                                    <p class="auth-form__policy-text">
+                                        When registering, you agree that we may use your provided data for the registration
+                                            and to send you notifications on our products and services. You can unsubscribe from 
+                                            notifications at any time in your settings. For additional info 
+                                            please refer to our <a href="./privacy_policy.html" class="auth-form__policy-link">Privacy Policy.</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="auth-form__controls">
+                                        <button  type="reset" class="btn auth-form__controls-back">Return</button>
+                                        <button type="submit" id="register-btn" class="btn btn--primary" onClick="store()">Register</button>
+                                    </div>
+                                        <div class="auth-form__socials">
+                                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                            <i class="fab fa-facebook auth-form__socials-icon"></i>
+                                            <span class="auth-form__socials-lable-title notifyUpdate">  Continue with Facebook </span>
+                                        </a>
+                                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                            <i class="fab fa-google auth-form__socials-icon"></i>
+                                            <span class="auth-form__socials-lable-title notifyUpdate"> Continue with Google</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div> 
+                </form>
+        
+        <!--LoginForm-->
+                 
+            <form action="">
+                <div class="auth-form" id="login-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__form">
+                            <div class="auth-form__label">
+                                <h2 class="auth-form__label-title">Đăng Nhập</h2>
+                            </div>
+                            <div class="auth-form__group">
+                                <input id="accLog" type="text" class="auth-form__input" required placeholder="Enter your account"
+                                    oninvalid="this.setCustomValidity('Vui lòng nhập tài khoản của bạn')"
+                                    oninput="setCustomValidity('')">
+                            </div>
+                            <div class="auth-form__group">
+                                <i class="fas fa-eye-slash show_hide"></i>
+                                <input id="passwordLog" type="password" class="auth-form__input" required placeholder="Enter your password"
+                                    oninvalid="this.setCustomValidity('Vui lòng nhập Password của bạn')"
+                                    oninput="setCustomValidity('')">
+                            </div>
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="#" class=" auth-form__help--forgot notifyUpdate">Forgot password?</a>
+                                    <span class="auth-form__help-separate"></span>
+                                    <a href="#" class="auth-form__help-link notifyUpdate">You need help?</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="auth-form__controls">
+                                        <button type="reset" class="btn auth-form__controls-back">Return</button>
+                                        <button type="submit" id="btn-login" class="btn btn--primary" onClick="check()">Login</button>
+                                </div>
+                                <div class="auth-form__socials">
+                                    <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                        <i class="fab fa-facebook auth-form__socials-icon"></i>
+                                        <span class="auth-form__socials-lable-title notifyUpdate">  Continue with Facebook </span>
+                                    </a>
+                                    <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                        <i class="fab fa-google auth-form__socials-icon"></i>
+                                        <span class="auth-form__socials-lable-title notifyUpdate"> Continue with Google</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+               
+        </div>
+    </div>    
+</div>
+        <!--FORM ĐĨA-->
+        <div class="playControls">
+            <div class="playControls__item">
+                <div class="btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn-toggle-play">
+                    <i class="fas fa-play playBtn"></i>
+                    <i class="fas fa-pause pauseBtn"></i>
+                </div>
+                <div class="btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+                <div class="btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="playbackTimeline">
+                    <div class="playbackTimeline__timePassed">
+                        <span class="timePlay">
+                            0:00
+                        </span>
+                    </div>
+                    <div class="range">
+                        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                        <div class="ranger-progress"></div>
+                    </div>
+                    <div class="playbackTimeline__duration">
+                        4:18
+                    </div>
+                </div>
+                <div class="volume ">
+                    <div class="volume--icon ">
+                        <i class="fas fa-volume-up volume-up"></i>
+                         <i class="fas fa-volume-down  volume-down"></i>
+                        <i class="fas fa-volume-mute  volume-mute"></i> 
+                    </div>   
+                    <div class="volume--background--range">
+                        <div class="volume--background">
+                            <input class="volume--range"type="range" value="10" step="1" min="0" max="10">
+                            <div class="volume-progress"></div>
+                        </div>
+                    </div>        
+                </div>
+                
+                <div class="playbackSoundBadge">
+                    <a href="#" class="">
+                        <div class="image__lightOutline ">
+                            <img src="https://i1.sndcdn.com/artworks-z2gxcCZamslfRFWy-mSu93g-t120x120.jpg" class="image__lightOutline--child">
+                        </div>
+                    </a>
+                    <div class="playbackSoundBadge__titleContextContainer">
+                        <a href="./singer.html" id="linkSinger" class="playbackSoundBadge__lightLink singer">Denvau</a>
+    
+                        <div class="playbackSoundBadge__title">
+                            <a class="playbackSoundBadge__titleLink" href="">
+                                <span class="playbackSoundBadge__titleText song">Đen - Mang Tiền Về Cho Mẹ ft. Nguyên Thảo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn-like">
+                        <i class="fas fa-heart"></i>
+                    </div >
+                    <div class="menu">
+                        <div class="btn-menu ">
+                        <i class="fas fa-bars menuBtn"></i>
+                        </div>
+                        <div class="menuSong">
+                            <div class="menu-header">
+                                <span class="menu-header__text"><p>Next up</p></span>
+                                <div class="menu-header__out">
+                                    <i class="fas fa-times menu-out-icon"></i>
+                                </div>
+                            </div>
+                            <div class="menu-main">
+                                <div class="menu-playlist">
+                                    <div class="playlist-song">
+                                        <div class="playlist-song__img">
+                                            <img src="https://i1.sndcdn.com/artworks-z2gxcCZamslfRFWy-mSu93g-t120x120.jpg" class="menu-song_img">
+                                        </div>
+                                        <div class="playlist-song__body">
+                                            <h3 class="title">Đen - Mang Tiền Về Cho Mẹ ft. Nguyên Thảo</h3>
+                                            <p class="author">Denvau</p>
+                                        </div>
+                                        <div class="song-option">
+                                            <i class="fas fa-heart song-option__like"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                    </div>
+                                    <div class="playlist-song">
+                                        <div class="playlist-song__img">
+                                            <img src="https://i1.sndcdn.com/artworks-z2gxcCZamslfRFWy-mSu93g-t120x120.jpg" class="menu-song_img">
+                                        </div>
+                                        <div class="playlist-song__body">
+                                            <h3 class="title">Đen - Mang Tiền Về Cho Mẹ ft. Nguyên Thảo</h3>
+                                            <p class="author">Denvau</p>
+                                        </div>
+                                        <div class="song-option">
+                                            <i class="fas fa-heart song-option__like"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                    </div>
+                                    <div class="playlist-song">
+                                        <div class="playlist-song__img">
+                                            <img src="https://i1.sndcdn.com/artworks-z2gxcCZamslfRFWy-mSu93g-t120x120.jpg" class="menu-song_img">
+                                        </div>
+                                        <div class="playlist-song__body">
+                                            <h3 class="title">Đen - Mang Tiền Về Cho Mẹ ft. Nguyên Thảo</h3>
+                                            <p class="author">Denvau</p>
+                                        </div>
+                                        <div class="song-option">
+                                            <i class="fas fa-heart song-option__like"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                    </div>
+                                    <div class="playlist-song">
+                                        <div class="playlist-song__img">
+                                            <img src="https://i1.sndcdn.com/artworks-z2gxcCZamslfRFWy-mSu93g-t120x120.jpg" class="menu-song_img">
+                                        </div>
+                                        <div class="playlist-song__body">
+                                            <h3 class="title">Đen - Mang Tiền Về Cho Mẹ ft. Nguyên Thảo</h3>
+                                            <p class="author">Denvau</p>
+                                        </div>
+                                        <div class="song-option">
+                                            <i class="fas fa-heart song-option__like"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <audio id="audio" src=""></audio>
+           
+        </div>
+</body>
+<script src="./assets/js/account.js"></script>
+<script src="./assets/js/songs.js"></script>
+<script src="./assets/js/validForm.js"></script>
+</html>

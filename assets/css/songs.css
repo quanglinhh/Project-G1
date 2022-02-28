@@ -1,0 +1,320 @@
+.app {
+  box-sizing: initial !important;
+}
+.body__nav {
+  background-image: linear-gradient(0, #5a514d, #665b55);
+
+  height: 380px;
+  display: flex;
+  justify-content: space-between; /* căn phần tử qua 2 bên */
+}
+.image__song {
+  padding: 30px 30px;
+}
+.nav__singer_song {
+  margin-left: 30px;
+}
+.song__icon {
+  margin-left: 27px;
+  margin-top: 70px;
+}
+.body__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.nav__player {
+  font-size: 99px;
+  display: flex;
+}
+.nav__play--icon {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border-radius: 50%;
+}
+.nav__pause--icon {
+  color: var(--primary-color);
+  position: relative;
+  bottom: 100px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: none !important;
+}
+.nav__singer_song {
+  padding: 50px 0px 0px 05px;
+  align-items: flex-start;
+}
+.nav__singer_song-text {
+  line-height: 1rem;
+}
+.nav__singer_song.nav__singer_song .nav__singer_song-singer {
+  text-decoration: none;
+  color: azure;
+  padding: 10px 5xp;
+  background-color: black;
+  margin-top: 15px;
+  font-size: 15px;
+}
+.nav__singer_song.nav__singer_song .nav__singer_song-text {
+  color: azure;
+  background-color: black;
+  font-size: 29.5px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(135deg, #8e8485, #e6846e);
+}
+/*      container  ----- */
+.container {
+  display: flex;
+  width: 100%;
+}
+.container__comment {
+  display: flex;
+  height: 40px;
+  padding: 10px 10px;
+}
+.icon {
+  font-size: 1.5rem;
+  padding-right: 5px;
+}
+.container__interactive-left {
+  width: 50px;
+  font-size: 1.5rem;
+  position: relative;
+  left: -40px;
+}
+
+.container_form_righ {
+}
+/* css thanh comment */
+.container_search {
+  height: 24px;
+  margin-top: 7.5px;
+  margin-left: 10px;
+  width: 765px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+}
+.container__with-search {
+  background-color: #f2f2f2;
+  width: 850px;
+}
+.container__interactive {
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(167, 161, 161);
+  padding: 10px 40px;
+}
+
+.container__interactive-left {
+  display: flex;
+}
+.container__interactive-left a {
+  display: flex;
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+.container_form_right {
+  display: flex;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.container__repost .repost {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* .container_form_right-like{
+    /* padding: 5px 5px; */
+.container__copylink .copylink {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.container_form_right .container_form_right-like {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* phần comment */
+.container__comment-details {
+  padding: 20px;
+  display: flex;
+}
+.container__comment-details-image {
+  border-radius: 50%;
+}
+.container__comment-details-singer a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+.container__comment-statistical {
+  font-size: 10px;
+  padding: 10px;
+}
+.container__comment-details-singer {
+  width: 150px;
+}
+.container__comment-details-singer-singer {
+  padding: 5px;
+  color: rgb(32, 156, 194);
+  font-size: 1.5rem;
+  width: 100%;
+}
+.container__conment-follow {
+  color: rgb(255, 255, 255);
+  background-color: #f50;
+  border: 1px solid rgb(155, 145, 145);
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.container__comment-listen-to-list {
+  width: 672px;
+  height: 76px;
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  margin-left: 0.5cm;
+  font-size: 1.5rem;
+}
+.container__comment-listen-to-list-singer {
+  display: flex;
+}
+.container__comment-listen-to-list-singer a {
+  text-decoration: none;
+}
+.container__comment-listen-to-list-singer-ib {
+  padding: 0px 10px;
+  color: rgb(22, 158, 221);
+}
+.container__comment-listen-to-list-singer-ib:hover {
+  color: #333;
+}
+.container__comment-listen-to-list-login {
+  margin-left: 10.5cm;
+  margin-top: 0.8cm;
+}
+.btn-Create-a-SoundCloud-account {
+  background-color: #f50;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #333;
+  color: rgb(233, 220, 220);
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.btn-sign-in {
+  width: 65px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.truncatedAudioInfo__content {
+  padding: 10px;
+}
+.truncatedAudioInfo__content-link {
+  display: flex;
+  padding: 10px;
+  margin-left: 0.5cm;
+}
+.truncatedAudioInfo__content-link1 {
+  font-size: 15px;
+}
+.truncatedAudioInfo__content-sc-tag-group a {
+  margin-left: 0.5cm;
+  text-decoration: none;
+  background-color: #a19595;
+  color: #f2f2f2;
+  padding: 5px;
+  border-radius: 25px;
+  font-weight: 200;
+  font-size: 13px;
+}
+.truncatedAudioInfo__content_cmt {
+  padding: 15px 15px 10px;
+  border-bottom: 1px solid rgb(172, 162, 162);
+}
+.truncatedAudioInfo__content_cmt-cmt {
+  font-size: 12px;
+  color: #333;
+}
+.truncatedAudioInfo__content_notify-list {
+  padding: 15px;
+}
+.header__notify-list {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px; */
+}
+.header__notify-info {
+  margin-top: 7px;
+}
+.header__notify-link {
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  color: #999;
+}
+.header__notify-item {
+  list-style: none;
+}
+.header__notify-img {
+  padding: 0px 10px;
+  border-radius: 50%;
+}
+.header__notify-list_time {
+  font-size: 12px;
+  color: #2b1f1f;
+}
+.header__notify-name {
+  padding: 0px 10px;
+  font-size: 12px;
+}
+.header__notify-description {
+  font-size: 12px;
+  padding: 0 10px;
+  color: rgb(12, 8, 8);
+}
+.container__form-right {
+  width: 150px;
+  color: rgb(12, 8, 8);
+}
+.container__form-right {
+  width: 430px;
+  height: 100;
+  /* background-color :rgb(245, 237, 237); */
+}
+.container__form-right_top {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 15px 0px 3px;
+  border-bottom: 1px solid #e7e6e6;
+}
+.container__form-right_top a {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+}
+.container__form-right_wrapper_img {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 10px;
+}
+.container__form-right_wrapper_infomation_like {
+  font-size: 12px;
+}
+.container__form-right_wrapper_infomation a {
+  text-decoration: none;
+  padding: 10px;
+}
